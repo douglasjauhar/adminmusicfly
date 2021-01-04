@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+
 import {
   TheContent,
   TheSidebar,
@@ -6,8 +7,14 @@ import {
   TheHeader
 } from './index'
 
-const TheLayout = () => {
-
+const TheLayout = (props) => {
+  const { history } = props;
+  const state ={
+    login : false
+  }
+    useEffect(() => {
+      state.login && history.push("/login")
+    })
   return (
     <div className="c-app c-default-layout">
       <TheSidebar/>

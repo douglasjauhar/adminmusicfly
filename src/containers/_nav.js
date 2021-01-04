@@ -7,6 +7,7 @@ const _nav =  [
     name: 'Dashboard',
     to: '/dashboard',
     icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
+    roles: []
   },
   {
     _tag: 'CSidebarNavDropdown',
@@ -27,17 +28,17 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: 'Iklan Slide Banner',
-        to: '/base/breadcrumbs',
+        to: '/adsslidebanner',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Iklan Popup Banner',
-        to: '/base/breadcrumbs',
+        to: '/adsbanner',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Iklan Audio',
-        to: '/base/breadcrumbs',
+        to: '/adsaudio',
       },
     ],
   },
