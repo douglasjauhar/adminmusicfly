@@ -45,6 +45,9 @@ const IklanBanner = React.lazy(() => import('./views/pages/Iklan/IklanBanner/Ikl
 const IklanAudio = React.lazy(() => import('./views/pages/Iklan/IklanBanner/IklanAudio/IklanAudio'));
 const IklanSlide = React.lazy(() => import('./views/pages/Iklan/IklanSlide/IklanSlide'));
 
+//Content Managemnt
+ const ContentFAQ = React.lazy(() => import('./views/pages/ContentManagement/Content'));
+
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -52,6 +55,7 @@ const routes = [
   { path: '/adsbanner', name: 'Iklan Banner', component: IklanBanner },
   { path: '/adsaudio', name: 'Iklan Audio', component: IklanAudio },
   { path: '/adsslidebanner', name: 'Iklan Slider Banner', component: IklanSlide },
+  { path: '/contentFAQ', name: 'Content FAQ', component: ContentFAQ },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },

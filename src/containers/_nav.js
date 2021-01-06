@@ -103,7 +103,7 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: 'Content FAQ',
-        to: '/base/breadcrumbs',
+        to: '/contentFAQ',
       },
       {
         _tag: 'CSidebarNavItem',

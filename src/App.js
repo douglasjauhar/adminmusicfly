@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './scss/style.scss';
 import 'antd/dist/antd.min.css'
+import 'react-quill/dist/quill.snow.css'; 
 
 const loading = (
   <div className="pt-3 text-center">
