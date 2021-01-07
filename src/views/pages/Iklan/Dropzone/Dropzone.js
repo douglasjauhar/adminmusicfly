@@ -1,6 +1,4 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { freeSet } from "@coreui/icons"
-import CIcon from '@coreui/icons-react'
 import axios from 'axios';
 
 import './Dropzone.css';
@@ -121,15 +119,6 @@ const Dropzone = () => {
             unsupportedFiles.splice(index3, 1);
             setUnsupportedFiles([...unsupportedFiles]);
         }
-    }
-    const actionData = (data) => {
-        return (
-            <div>
-                <CIcon content={freeSet['cilDelete']} style={{ color: "red", cursor: "pointer", marginRight : 2 }} onClick={() => { removeFile(data) }} />
-                <CIcon content={freeSet['cilOpentype']} style={{ color: "black", cursor: "pointer" }} onClick={() => {   setIsModalVisible(true) }} />
-            </div>
-        )
-
     }
     const openImageModal = (file) => {
         const reader = new FileReader();

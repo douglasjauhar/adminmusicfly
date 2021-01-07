@@ -63,7 +63,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavItem',
     name: 'Upload Music',
-    to: '/widgets',
+    to: '/upload-music',
     icon: <CIcon content={freeSet['cilCloudUpload']} className="c-sidebar-nav-icon" />,
   },
   {
@@ -108,14 +108,14 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: 'Content About Us',
-        to: '/base/breadcrumbs',
+        to: '/content-about',
       },
     ],
   },
   {
     _tag: 'CSidebarNavItem',
     name: 'Share Notifikasi',
-    to: '/widgets',
+    to: '/shareNotifikasi',
     icon: <CIcon content={freeSet['cilPaperPlane']} className="c-sidebar-nav-icon" /> ,
   },
 ]

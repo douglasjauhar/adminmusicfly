@@ -166,10 +166,10 @@ const Dashboard = () => {
                       Wednesday
                       </span>
                     </div>
-                    <div className="progress-group-bars">
+                    {/* <div className="progress-group-bars">
                       <CProgress className="progress-xs" color="info" value="12" />
                       <CProgress className="progress-xs" color="danger" value="67" />
-                    </div>
+                    </div> */}
                   </div>
                   <div className="progress-group mb-4">
                     <div className="progress-group-prepend">
@@ -211,8 +211,8 @@ const Dashboard = () => {
                       </span>
                     </div>
                     <div className="progress-group-bars">
-                      <CProgress className="progress-xs" color="info" value="9" />
-                      <CProgress className="progress-xs" color="danger" value="69" />
+                      {/* <CProgress className="progress-xs" color="info" value="9" />
+                      <CProgress className="progress-xs" color="danger" value="69" /> */}
                     </div>
                   </div>
                   <div className="legend text-center">

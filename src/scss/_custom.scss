@@ -1,5 +1,3 @@
-// Here you can add other styles
-// Here you can add other styles
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 .c-body {
     background: #EBEDEF;
@@ -8,21 +6,17 @@
 }
 .c-subbody {
     font-family: 'Poppins', sans-serif;
-  
 }
 .c-sidebar {
-    //background-color: #1e1e2d;
     background-color: #314351;
     font-family: 'Poppins', sans-serif;
   }
-  .c-sidebar-nav-link::hover {
-    //background-color: #1e1e2d;
+.c-sidebar-nav-link::hover {
     background-color: #314351;
-    // font-family: 'Poppins', sans-serif;
   }
-
-
-
+.c-app {
+    font-family: 'Poppins', sans-serif;
+}
 .breadcrumb-item.active {
     color: #8a93a2;
     font-family: 'Poppins', sans-serif;
@@ -30,4 +24,7 @@
 .breadcrumb-item {
     display: flex;
     font-family: 'Poppins', sans-serif;
+}
+.c-footer{
+    background-color: white;
 }

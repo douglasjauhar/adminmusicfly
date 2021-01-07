@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 // import 'react-quill/dist/quill.snow.css';
-import ReactQuill , {Quill}from "react-quill"
+import ReactQuill from "react-quill"
 // import  ImageResize  from 'quill-image-resize-module';
-import {Card} from "antd"
 import axios from "axios"
 
 export default class Content extends Component {
@@ -12,7 +11,14 @@ export default class Content extends Component {
         this.handleChange = this.handleChange.bind(this)
     }
     componentDidMount(){
-        // Quill.register('modules/ImageResize', ImageResize);
+        let data = this.props.textData
+        console.log("noo",data)
+        if(typeof data === "undefined"){
+            return;
+        }
+        this.setState({
+            text : data
+        })
     }
     handleChange(value) {
         this.setState({ text: value }, ()=> {
@@ -46,7 +52,6 @@ export default class Content extends Component {
   
     render() {
         const contents = {
-            // ImageResize : {},
             toolbar: {
                 container: [
                     [{ header: '1' }, { header: '2' }, { header: [3, 4, 5, 6] }, { font: [] }],
@@ -63,13 +68,11 @@ export default class Content extends Component {
     }
         return (
             <div>
-                <Card title="Content FAQ">
                 <ReactQuill 
                     value={this.state.text}
                     onChange={this.handleChange}
                     modules={contents}     
                     />
-                </Card>
             </div>
         )
     }

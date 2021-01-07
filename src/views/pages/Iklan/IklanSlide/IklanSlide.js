@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Dropzone from "../Dropzone/Dropzone"
-import ListImageSlide from './ListImageSlide'
-import {Col, Row} from "antd"
+import {Row} from "antd"
 export default class IklanSlide extends Component {
     render() {
         return (

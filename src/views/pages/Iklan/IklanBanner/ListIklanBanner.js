@@ -49,23 +49,6 @@ export default class ListIklanBanner extends Component {
     }
     handleActiveChange = checked => {
         console.log(checked)
-        // console.log(x.id)
-        // const {data} =this.state
-
-        // const findIndex = data.find(e => e.id === x.id)
-
-        // // console.log(findIndex.length)
-        // if(typeof findIndex === "object"){
-        //     findIndex.isActive = true
-        //     console.log(this.state.data)
-        //     // this.setState({data : findIndex}, ()=> {
-        //     //     console.log(this.state.data, "nyampe")
-
-        //     // })
-        // }
-
-
-
     };
 
     actionData = (data) => {
@@ -86,7 +69,6 @@ export default class ListIklanBanner extends Component {
         )
     }
     actionActive = (data) => {
-        const { active, size, buttonShape } = this.state
         return (
             <div>
                 <Switch checked={data.isActive} onChange={() => { this.handleActiveChange(data.isActive) }} />
@@ -147,7 +129,7 @@ export default class ListIklanBanner extends Component {
             },
         ]
 
-        const file = `<p>EDO MAU MAKAN NASI</p><ol><li>makan</li></ol><iframe class="ql-video" frameborder="0" allowfullscreen="true" src="https://www.youtube.com/embed/oSUmsNXA6KE?showinfo=0"></iframe><ol><li><br></li><li>ngising</li><li>nyabun</li><li>konten</li></ol> `
+        // const file = `<p>EDO MAU MAKAN NASI</p><ol><li>makan</li></ol><iframe class="ql-video" frameborder="0" allowfullscreen="true" src="https://www.youtube.com/embed/oSUmsNXA6KE?showinfo=0"></iframe><ol><li><br></li><li>ngising</li><li>nyabun</li><li>konten</li></ol> `
         
 
         return (
@@ -172,7 +154,7 @@ export default class ListIklanBanner extends Component {
                     {/* <Input type="file" value={fileImg}/> */}
                     <Image src={fileImg} width={"200px"} />
                 </Modal>
-                <div dangerouslySetInnerHTML={{__html:file}}></div>
+                {/* <div dangerouslySetInnerHTML={{__html:file}}></div> */}
                 <Table dataSource={data} columns={columns} />
             </Fragment>
 

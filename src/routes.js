@@ -46,8 +46,13 @@ const IklanAudio = React.lazy(() => import('./views/pages/Iklan/IklanBanner/Ikla
 const IklanSlide = React.lazy(() => import('./views/pages/Iklan/IklanSlide/IklanSlide'));
 
 //Content Managemnt
- const ContentFAQ = React.lazy(() => import('./views/pages/ContentManagement/Content'));
+const ContentFAQ = React.lazy(() => import('./views/pages/ContentManagement/ContentFAQ'));
+const ContentAbout = React.lazy(() => import('./views/pages/ContentManagement/ContentAbout'));
 
+//Share Notifikasi
+const ShareNotifikasi = React.lazy(() => import('./views/pages/ShareNotifikasi/Index'));
+//Upload Music
+const UploadMusic = React.lazy(() => import('./views/pages/UploadMusic/Index'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -56,6 +61,9 @@ const routes = [
   { path: '/adsaudio', name: 'Iklan Audio', component: IklanAudio },
   { path: '/adsslidebanner', name: 'Iklan Slider Banner', component: IklanSlide },
   { path: '/contentFAQ', name: 'Content FAQ', component: ContentFAQ },
+  { path: '/content-about', name: 'Content About', component: ContentAbout },
+  { path: '/upload-music', name: 'Upload Track', component: UploadMusic },
+  { path: '/shareNotifikasi', name: 'Share Notifikasi', component: ShareNotifikasi },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
@@ -92,7 +100,7 @@ const routes = [
   { path: '/notifications/modals', name: 'Modals', component: Modals },
   { path: '/notifications/toaster', name: 'Toaster', component: Toaster },
   { path: '/widgets', name: 'Widgets', component: Widgets },
-  { path: '/users', exact: true,  name: 'Users', component: Users },
+  { path: '/users', exact: true, name: 'Users', component: Users },
   { path: '/users/:id', exact: true, name: 'User Details', component: User }
 ];
 
