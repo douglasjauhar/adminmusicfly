@@ -10,7 +10,38 @@ const { TextArea } = Input;
 const { Option } = Select;
 
 export default class FormUpload extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            dataFile : null,
+            formData : {
+                name : null
+            }
+        }
+    }
+    componentDidMount(){
+        const data = this.props.receivedata
+        if(data === null){
+            return;
+        }
+        this.setState({
+            dataFile : data
+        }, () => {
+           this.receivedata(this.state.dataFile)
+        })
+    }
+
+    receivedata = (e) => {
+        const name = e.name.replace(".mp3", "")
+        const data = this.state.formData
+        data.name = name
+        this.setState({formData : data}, ()=> {
+            console.log(this.state.formData)
+        })
+    }
     render() {
+        const {formData} = this.state
+        // console.log("dari child", dataFile === null ? false : dataFile.name)
         const stylesImg = {
             width: "80%",
             height: "260px",
@@ -34,7 +65,7 @@ export default class FormUpload extends Component {
             <div>
                 <div className="progress-group" style={{bottom : 0}}>
                     <div className="progress-group-header">
-                        <span className="title">lagu.mp3</span>
+                        <span className="title">{formData.name}</span>
                         <span className="ml-auto ">Ready. Click Save to post this track.</span>
                     </div>
                     <div className="progress-group-bars">
@@ -46,7 +77,7 @@ export default class FormUpload extends Component {
                         <CCol sm="4" lg="4"><div style={stylesImg}>THUMBNAIL</div></CCol>
                         <CCol sm="6" lg="8" >
                             <span style={styleLabel}>Title</span>
-                            <Input />
+                            <Input value={formData.name} />
                             <span style={styleLabel}>Artist</span>
                             <Input />
                             <span style={styleLabel}>Album</span>

@@ -22,10 +22,8 @@ export default class Index extends Component {
                     {data === null ?
                         <UploadData sendData={(v) => this.sendData(v)} />
                         :
-                        <FormUpload />
+                        <FormUpload receivedata={this.state.data}/>
                     }
-
-
                 </Card>
             </Fragment>
         )

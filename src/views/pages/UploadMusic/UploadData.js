@@ -8,7 +8,7 @@ export default class UploadData extends Component {
     }
     handleChange = (e) => {
         const data = e.target.files[0]
-        // console.log(data)
+        console.log("cok",data.name)
         this.props.sendData(data)
     }
     render() {
