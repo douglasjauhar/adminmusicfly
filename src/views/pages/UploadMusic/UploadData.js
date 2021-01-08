@@ -7,14 +7,13 @@ export default class UploadData extends Component {
         }
     }
     handleChange = (e) => {
-        const data = e.target.files[0]
-        console.log("cok",data.name)
+        const data = e.target.files
         this.props.sendData(data)
     }
     render() {
         return (
           <div className="box" >
-              <input type="file" onChange={this.handleChange}></input>
+              <input type="file" multiple onChange={this.handleChange}></input>
           </div>
         )
     }

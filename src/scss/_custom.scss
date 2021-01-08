@@ -11,9 +11,9 @@
     background-color: #314351;
     font-family: 'Poppins', sans-serif;
   }
-.c-sidebar-nav-link::hover {
-    background-color: #314351;
-  }
+// .c-sidebar-nav-link::hover {
+//     background-color: #314351;
+//   }
 .c-app {
     font-family: 'Poppins', sans-serif;
 }
@@ -28,3 +28,21 @@
 .c-footer{
     background-color: white;
 }
+.c-sidebar-nav-link:hover{
+    background-color: white;
+}
+.boxes { 
+    box-shadow: 5px 5px 5px 5px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top : 40px;
+  }
+.boxes .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color : #314351;
+      font-size : 12pt;
+      font-weight: 500;
+}
+.boxes .ant-tabs-ink-bar {
+    height: 5px;
+    background: #314351;
+  }
