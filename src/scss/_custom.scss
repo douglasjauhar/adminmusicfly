@@ -35,7 +35,7 @@
     box-shadow: 5px 5px 5px 5px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
     padding: 10px;
     margin-bottom: 30px;
-    margin-top : 40px;
+    margin-top : 10px;
   }
  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
       color : #314351 !important;
@@ -44,7 +44,7 @@
 }
  .ant-tabs-ink-bar {
     height: 5px;
-    background:  #F9B115 !important;
+    background:  #425768 !important;
 }
  .ant-tabs-tab-btn{
     font-size : 12pt;
@@ -55,4 +55,11 @@
 }
 .your__tracks .ant-table-thead{
     display: none!important;
+}
+.ant-modal-content{
+    font-family: 'Poppins', sans-serif;
+}
+.ant-drawer {
+    margin-top: 100px !important;
+    font-family: 'Poppins', sans-serif;
 }

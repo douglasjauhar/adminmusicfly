@@ -90,11 +90,9 @@ export default class YourTracks extends Component {
             },
         ];
         const wrapperForm = {
-            margin: "100px auto"
+            // margin: "100px auto"
         }
-        const buttonStyle = {
-            right: 0
-        }
+    
 
         return (
             <div className="your__tracks">
@@ -109,7 +107,6 @@ export default class YourTracks extends Component {
                 </div>
                 <Drawer visible={openEdit} closable onClose={this.handleCancel} width={"70%"} height={"70%"}>
                     <div style={wrapperForm}>
-                        <Button onClick={this.handleCancel} style={buttonStyle}>Tutup</Button>
                         <FormUpload receivedata={data} loadPage={countLoad} />
                     </div>
                 </Drawer>

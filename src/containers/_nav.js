@@ -67,22 +67,10 @@ const _nav =  [
     icon: <CIcon content={freeSet['cilCloudUpload']} className="c-sidebar-nav-icon" />,
   },
   {
-    _tag: 'CSidebarNavDropdown',
+    _tag: 'CSidebarNavItem',
     name: 'Label Music',
-    route: '/base',
-    icon: 'cil-puzzle',
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Semua Label Music',
-        to: '/base/breadcrumbs',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Approval Label Music',
-        to: '/base/breadcrumbs',
-      },
-    ],
+    to: '/label-music',
+    icon: <CIcon content={freeSet['cilMusicNote']} className="c-sidebar-nav-icon" />,
   },
   {
     _tag: 'CSidebarNavDropdown',

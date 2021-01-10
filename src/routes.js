@@ -53,6 +53,8 @@ const ContentAbout = React.lazy(() => import('./views/pages/ContentManagement/Co
 const ShareNotifikasi = React.lazy(() => import('./views/pages/ShareNotifikasi/Index'));
 //Upload Music
 const UploadMusic = React.lazy(() => import('./views/pages/UploadMusic/Index'));
+//Approval Label Musix
+const LabelMusic =  React.lazy(() => import('./views/pages/LabelMusik/Index'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -64,6 +66,7 @@ const routes = [
   { path: '/content-about', name: 'Content About', component: ContentAbout },
   { path: '/upload-music', name: 'Upload Track', component: UploadMusic },
   { path: '/shareNotifikasi', name: 'Share Notifikasi', component: ShareNotifikasi },
+  { path: '/label-music', name: 'Label Musik', component: LabelMusic },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
