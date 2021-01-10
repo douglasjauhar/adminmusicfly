@@ -15,14 +15,17 @@ export class IklanBanner extends Component {
         }
     }
     onChange = ({fileList : newFileList}) => {
-        let temp = []
-        newFileList.forEach(e => {
-            delete e.response
-            e.status = null
-            temp.push(e)
-        })
-        this.setState({fileList : newFileList})
-        console.log(newFileList, temp)
+        if(newFileList.length >= 1){
+            let temp = []
+            newFileList.forEach(e => {
+                delete e.response
+                e.status = null
+                temp.push(e)
+            })
+            this.setState({fileList : newFileList})
+            console.log(newFileList, temp)
+        }
+ 
     
     }
 
@@ -88,9 +91,10 @@ export class IklanBanner extends Component {
                             <ImgCrop rotate>
                                 <Upload
                                     listType="picture-card"
-                                    fileList={fileList}
+                                    // fileList={fileList}
                                     onChange={this.onChange}
                                     onPreview={onPreview}
+                                    multiple={false}
                                 >
                                     {fileList.length < 5 && '+ Upload'}
                                 </Upload>

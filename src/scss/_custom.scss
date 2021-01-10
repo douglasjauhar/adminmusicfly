@@ -37,12 +37,22 @@
     margin-bottom: 30px;
     margin-top : 40px;
   }
-.boxes .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-      color : #314351;
+ .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color : #314351 !important;
       font-size : 12pt;
-      font-weight: 500;
+      font-weight: bold !important;
 }
-.boxes .ant-tabs-ink-bar {
+ .ant-tabs-ink-bar {
     height: 5px;
-    background: #314351;
-  }
+    background:  #F9B115 !important;
+}
+ .ant-tabs-tab-btn{
+    font-size : 12pt;
+}
+.ant-drawer-body{
+    background-color: none;
+    font-family: 'Poppins', sans-serif;
+}
+.your__tracks .ant-table-thead{
+    display: none!important;
+}
